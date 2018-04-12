@@ -13,6 +13,8 @@ public class ArrayManipulation {
 	@Test
 	public void testSortAnArray() throws Exception {
 
+	
+		
 		String[] testArray = { "concerned", "affected", "fascinated",
 				"intrigued", "absorbed", "inquisitive", "nosy", "snoopy",
 				"engrossed", "curious" };
@@ -25,6 +27,7 @@ public class ArrayManipulation {
 		assertEquals("fascinated", testArray[5]);
 		assertEquals("snoopy", testArray[testArray.length - 1]);
 	}
+
 
 	@Test
 	public void testSortARandomArray() throws Exception {
@@ -39,7 +42,7 @@ public class ArrayManipulation {
 			assertTrue(testArray[i].compareTo(testArray[i+1]) <= 0);
 		}
 	}
-
+//-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 	@Test
 	public void testInsertIntoArray() {
 		int[] testArray = { 3, 6, 8, 3, 3, 2, 98 };
@@ -66,7 +69,7 @@ public class ArrayManipulation {
 			assertEquals(inputArrayCopy[i-1], actualOutputArray[i]);
 		}
 	}
-
+/*
 	@Test
 	public void testInsertInOrderFirst() throws Exception {
 		String[] orderedArray = { "concerned", "affected", "fascinated",
@@ -161,5 +164,5 @@ public class ArrayManipulation {
 			assertTrue(outputArray[i].compareTo(outputArray[i+1]) <= 0);
 		}
 	}
-
+*/
 }
