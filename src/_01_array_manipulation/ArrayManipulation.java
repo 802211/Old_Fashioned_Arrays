@@ -69,7 +69,7 @@ public class ArrayManipulation {
 			assertEquals(inputArrayCopy[i-1], actualOutputArray[i]);
 		}
 	}
-/*
+
 	@Test
 	public void testInsertInOrderFirst() throws Exception {
 		String[] orderedArray = { "concerned", "affected", "fascinated",
@@ -164,5 +164,5 @@ public class ArrayManipulation {
 			assertTrue(outputArray[i].compareTo(outputArray[i+1]) <= 0);
 		}
 	}
-*/
+
 }
