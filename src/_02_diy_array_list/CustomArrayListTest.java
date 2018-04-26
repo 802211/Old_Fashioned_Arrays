@@ -51,54 +51,54 @@ public class CustomArrayListTest {
 		if(list.get(4) != 'O') fail("list.get(4) returning improper value.");
 	}
 	
-	@Test
-	public void testRemove() {
-		class Student { 
-			public String name; 
-			public Student(String s) {
-				name = s;
-			}
-		}
-		ArrayList<Student> list = new ArrayList<Student>();
-		list.add(new Student("Tim"));
-		list.add(new Student("Sara"));
-		list.add(new Student("Kamara"));
-		list.add(new Student("Devaugn"));
-		
-		list.remove(0);
-		
-		if(!list.get(0).name.equals("Sara")) {
-			fail("list.get(0) returning improper value.");
-		}
-		if(!list.get(1).name.equals("Kamara")) {
-			fail("list.get(1) returning improper value.");
-		}
-		if(!list.get(2).name.equals("Devaugn")) {
-			fail("list.get(2) returning improper value.");
-		}
-		
-		list.remove(2);
-		if(!list.get(0).name.equals("Sara")) {
-			fail("list.get(0) returning improper value.");
-		}
-		if(!list.get(1).name.equals("Kamara")) {
-			fail("list.get(1) returning improper value.");
-		}
-	}
-	
-	@Test
-	public void testContains() {
-		ArrayList<String> list = new ArrayList<String>();
-		list.add("This");
-		list.add("is");
-		list.add("only");
-		list.add("a");
-		list.add("test");
-		
-		assertTrue(list.contains("This"));
-		assertTrue(list.contains("is"));
-		assertTrue(list.contains("only"));
-		assertFalse(list.contains("the"));
-		assertFalse(list.contains("best"));
-	}
+//	@Test
+//	public void testRemove() {
+//		class Student { 
+//			public String name; 
+//			public Student(String s) {
+//				name = s;
+//			}
+//		}
+//		ArrayList<Student> list = new ArrayList<Student>();
+//		list.add(new Student("Tim"));
+//		list.add(new Student("Sara"));
+//		list.add(new Student("Kamara"));
+//		list.add(new Student("Devaugn"));
+//		
+//		list.remove(0);
+//		
+//		if(!list.get(0).name.equals("Sara")) {
+//			fail("list.get(0) returning improper value.");
+//		}
+//		if(!list.get(1).name.equals("Kamara")) {
+//			fail("list.get(1) returning improper value.");
+//		}
+//		if(!list.get(2).name.equals("Devaugn")) {
+//			fail("list.get(2) returning improper value.");
+//		}
+//		
+//		list.remove(2);
+//		if(!list.get(0).name.equals("Sara")) {
+//			fail("list.get(0) returning improper value.");
+//		}
+//		if(!list.get(1).name.equals("Kamara")) {
+//			fail("list.get(1) returning improper value.");
+//		}
+//	}
+//	
+//	@Test
+//	public void testContains() {
+//		ArrayList<String> list = new ArrayList<String>();
+//		list.add("This");
+//		list.add("is");
+//		list.add("only");
+//		list.add("a");
+//		list.add("test");
+//		
+//		assertTrue(list.contains("This"));
+//		assertTrue(list.contains("is"));
+//		assertTrue(list.contains("only"));
+//		assertFalse(list.contains("the"));
+//		assertFalse(list.contains("best"));
+//	}
 }
